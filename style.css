@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: black;
+	/*background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;*/
+	width: auto;
+	height: 1200px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: Montserrat;
+	scroll-behavior: smooth;
+}
+h3{
+	font-family: MONTSERRAT;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 4em;
+	color: #FFFFFF;
+	background: linear-gradient(#FF4D00, #FFA600);
+	color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+}
+h4{
+	display: none;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: 1.6em;
+	background: #0A0F18;
+	padding: 30px;
+	cursor: pointer;
+	color: #e1b12c;
+	bottom: 0;
+	position: sticky;
+	margin: 20px 300px 0px 300px;
+	animation: float 1.2s ease-out infinite;
+	border: 5px solid #fbc531;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+.miniStars{
+	display: none;
+	margin: 50px;
+}
+.miniStars img{
+	float: left;
+	animation: float 0.5s infinite;
+	animation-timing-function: linear;
+	padding: 2px;
+}
+.miniStars2{
+	display: none;
+	margin: 50px;
+}
+.miniStars2 img{
+	float: left;
+	animation: float 0.5s infinite;
+	animation-timing-function: linear;
+	padding: 3px;
+}
+.miniStars3{
+	display: none;
+	margin: 50px;
+}
+.miniStars3 img{
+	float: left;
+	animation: float 0.5s infinite;
+	animation-timing-function: linear;
+	padding: 3px;
+}
+header{
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+	background: rgba(0, 0, 0, 0.19);
+	border-top: 2px solid #DBA514;
+	border-bottom: 2px solid #DBA514;
+}
+header h1{
+	text-align: center;
+	font-family: Georgia;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 4em;
+	background: linear-gradient(yellow, #FFFFFF);
+	color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+	cursor: pointer;
+}
+header h1:hover{
+	color: white;
+}
+#superEffect{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	position: absolute;
+	left: 27%;
+	animation: spin 0.95s cubic-bezier(.8, 0, .2, 1) infinite;
+	animation-timing-function: linear;
+}
+#superEffect2{
+	z-index: 1;
+	display: none;
+	position: absolute;
+	top: 16%;
+	left: 6%;
+	animation: spin 0.95s cubic-bezier(.8, 0, .2, 1) infinite;
+	animation-timing-function: linear;
+}
+#superEffect3{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	position: absolute;
+	left: 35%;
+	animation: spin 0.95s cubic-bezier(.8, 0, .2, 1) infinite;
+	animation-timing-function: linear;
+}
+#superEffect4{
+	z-index: 1;
+	display: none;
+	position: absolute;
+	top: 16%;
+	left: 60%;
+	animation: spin 0.95s cubic-bezier(.8, 0, .2, 1) infinite;
+	animation-timing-function: linear;
+}
+.firstCard{
+	width: 320px;
+	height: 460px;
+	border-radius: 20px;
+	background-image: url('backTexture.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	cursor: pointer;
+	animation: cog 1.2s infinite;
+	animation-timing-function: linear;
+	-webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.firstCard:hover{
+	animation: none;
+	transform: scale(1.1);
+	transition: all 1s ease-in-out;
+}
+.miniCards{
+	display: flex;
+	margin-left: auto;
+  	margin-right: auto;
+ 	margin: 40px;
+}
+#firstMiniCard{
+	z-index: 0;
+	margin: 95px 95px 0px 95px;
+	display: none;
+	cursor: pointer;
+	width: 350px;
+	height: 400px;
+	border-radius: 10px;
+	/*padding: 50px;*/
+	transform: rotate(-20deg);
+	animation: float 1.2s ease-out infinite;
+	box-shadow: 0 4px 8px 0 rgba(255, 247, 0, 0.870), 0 6px 90px 0 rgba(255, 247, 0, 0.90);
+}
+#firstMiniCard:hover{
+	animation: none;
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+}
+#secondMiniCard{
+	display: none;
+	cursor: pointer;
+	width: 350px;
+	height: 400px;
+	border-radius: 10px;
+	/*padding: 50px;*/
+	animation: float 1.2s ease-out infinite;
+	box-shadow: 0 4px 8px 0 rgba(255, 247, 0, 0.870), 0 6px 90px 0 rgba(255, 247, 0, 0.90);
+}
+#secondMiniCard:hover{
+	animation: none;
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+}
+#thirdMiniCard{
+	margin: 97px 97px 0px 97px;
+	display: none;
+	cursor: pointer;
+	width: 350px;
+	height: 400px;
+	border-radius: 10px;
+	/*padding: 50px;*/
+	transform: rotate(20deg);
+	animation: float 1.2s ease-out infinite;
+	box-shadow: 0 4px 8px 0 rgba(255, 247, 0, 0.870), 0 6px 90px 0 rgba(255, 247, 0, 0.90);
+}
+#thirdMiniCard:hover{
+	animation: none;
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+}
+#revealBtn{
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	display: none;
+	font-family: Montserrat;
+	font-weight: bold;
+	border: none;
+	background: rgba(0, 0, 0, 1);
+	border: 2px solid #DBA514;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#revealBtn2{
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	display: none;
+	font-family: Montserrat;
+	font-weight: bold;
+	border: none;
+	background: rgba(0, 0, 0, 1);
+	border: 2px solid #DBA514;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#revealBtn3{
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	display: none;
+	font-family: Montserrat;
+	font-weight: bold;
+	border: none;
+	background: rgba(0, 0, 0, 1);
+	border: 2px solid #DBA514;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#glow{
+	animation: fadeOut 1s infinite, slideInFromTop 0.9s infinite;
+	animation-timing-function: linear;
+}
+#glow2{
+	animation: fadeOut 1s infinite, slideInFromTop2 0.9s infinite;
+	animation-timing-function: linear;
+}
+#glow3{
+	animation: fadeOut 1s infinite, slideInFromTop3 0.9s infinite;
+	animation-timing-function: linear;
+}
+@keyframes float {
+	50% {
+		transform: translate(0, -5px);
+	}
+}
+@keyframes cog {
+	100%{
+		-webkit-transform: perspective(900px) rotateY(360deg);
+        transform: perspective(900px) rotateY(360deg );
+	}
+}
+@keyframes cog2 {
+	0%{
+		transform: perspective(300px) scale(0);
+	}
+	25%{
+		transform: perspective(300px) scale(1);
+	}
+}
+@keyframes cog22 {
+	100%{
+		transform: perspective(300px) scale(1.7);
+	}
+}
+@keyframes cog3 {
+	0%{
+		transform: perspective(300px) scale(1);
+	}
+	25%{
+		transform: perspective(300px) scale(0);
+	}
+}
+
+@keyframes spin {
+   100%{ 
+    	transform: scale(2.5) rotate(-360deg);
+  	}
+  	50%{
+  		opacity: 0;
+  	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slideInFromTop2 {
+	0% {
+		transform: translateY(40%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slideInFromTop3 {
+	0% {
+		transform: translateY(30%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@keyframes stars{
+	100%{
+		transform: scale(1.4);
+	}
+	0%{
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		transform: scale(0.9);
+	}
+}
